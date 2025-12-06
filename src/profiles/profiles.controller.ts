@@ -23,7 +23,7 @@ export class ProfilesController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.profileService.findOne(id);
+    return this.profileService.findProfile(id);
   }
 
   @Post()
